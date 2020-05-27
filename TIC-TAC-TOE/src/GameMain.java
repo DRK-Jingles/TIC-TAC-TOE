@@ -83,8 +83,7 @@ public class GameMain {
       if (grid.hasWon(turnPlayer)) {	//IF PLAYER has WON
     	  winner = turnPlayer;			//set winner
     	  gameOver = true;				//set gameover
-      }
-      if (grid.isDraw()) {				//IF GAME is DRAW
+      }else if (grid.isDraw()) {				//IF GAME is DRAW
     	  winner = Player.EMPTY;		//set winner
     	  gameOver = true;				//set gameover
       }
@@ -109,3 +108,6 @@ public class GameMain {
 	   }while(playAgain);	   								//WHILE playAgain is TRUE
 	}
 }
+//created by:Adam Hearps
+//student id: 5001160
+//For: openpolytech, BIT504, assignment 2.
